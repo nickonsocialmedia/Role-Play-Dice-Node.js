@@ -10,7 +10,7 @@ node Role_Play_Dice.js
 It should work on windows and linux, potentailly mack too but no one cares about that ;) . 
 
 
-BREAKDOWN
+############################ BREAKDOWN ##################################
 
 We import readline,
 
@@ -50,7 +50,6 @@ dnd_dice = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 to get a random number, we use the method Math.random to generate a number between 0 and 1 say it's 0.982 and we multiply this by the number of elements in the dnd\_dice array. our dice has 12 sides so multiply by 12, this gives 11.999 we then use the method Math.floor to drop the decimal portion giving us 11. we then console.log the string "you rolled " with the results from the logic of the if statement. we then run ask again.
 
-(does the user need to type roll again?)
 yes, the user has to type roll again each time to roll again.
 
-if the user types q the if statement isn't satisfied and we pass the if statement and ask else if input is q which in this case it is input === q, we console.log thanks for playing and the program's input interface is closed with rl.close(). (why do we close at rl and not somewhere else like ask? okay because this code is inside the rl function.)
+if the user types q the if statement isn't satisfied and we pass the if statement and ask else if input is q which in this case it is input === q, we console.log thanks for playing and the program's input interface is closed with rl.close().
